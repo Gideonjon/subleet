@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubManager - Manage Your Subscriptions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">SubManager</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="#download">Download</a>
+            </div>
+            <button class="cart-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-7 2h7a2 2 0 0 0 2-2V6H6v14a2 2 0 0 0 2 2zM3 6h18l-3-4H6L3 6z"/>
+                </svg>
+            </button>
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"/>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Manage Your Subs?</h1>
+            <p class="hero-subtitle">Take control of your digital subscriptions in one place</p>
+            <div class="download-buttons">
+                <a href="#" class="download-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,20.5v-17C3,2.67,3.67,2,4.5,2h9C14.33,2,15,2.67,15,3.5v17c0,0.83-0.67,1.5-1.5,1.5h-9C3.67,22,3,21.33,3,20.5z M6,18h6v-1H6V18z M13.5,4h-9C4.22,4,4,4.22,4,4.5v11C4,15.78,4.22,16,4.5,16h9c0.28,0,0.5-0.22,0.5-0.5v-11C14,4.22,13.78,4,13.5,4z"/>
+                    </svg>
+                    Download on Google Play
+                </a>
+                <a href="#" class="download-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71,19.5C17.88,20.74,17,21.95,15.66,21.97C14.32,22,13.89,21.18,12.37,21.18C10.84,21.18,10.37,21.95,9.1,22C7.79,22.05,6.8,20.68,5.96,19.47C4.25,17,2.94,12.45,4.7,9.39C5.57,7.87,7.13,6.91,8.82,6.88C10.1,6.86,11.32,7.75,12.11,7.75C12.89,7.75,14.37,6.68,15.92,6.84C16.57,6.87,18.39,7.1,19.56,8.82C19.47,8.88,17.39,10.1,17.41,12.63C17.44,15.65,20.06,16.66,20.09,16.67C20.06,16.74,19.67,18.11,18.71,19.5ZM13,3.5C13.73,2.67,14.94,2.04,15.94,2C16.07,3.17,15.6,4.35,14.9,5.19C14.21,6.04,13.07,6.7,11.95,6.61C11.8,5.46,12.36,4.26,13,3.5Z"/>
+                    </svg>
+                    Download on App Store
+                </a>
+            </div>
+            <div class="floating-apps">
+                <div class="app-icon netflix" data-speed="20">
+                    <img src="/placeholder.svg?height=40&width=40&text=Netflix" alt="Netflix">
+                </div>
+                <div class="app-icon spotify" data-speed="15">
+                    <img src="/placeholder.svg?height=40&width=40&text=Spotify" alt="Spotify">
+                </div>
+                <div class="app-icon disney" data-speed="25">
+                    <img src="/placeholder.svg?height=40&width=40&text=Disney+" alt="Disney+">
+                </div>
+                <div class="app-icon apple" data-speed="18">
+                    <img src="/placeholder.svg?height=40&width=40&text=Apple" alt="Apple">
+                </div>
+            </div>
+            <form id="waitlist-form" class="waitlist-form">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Join the Waitlist</button>
+            </form>
+            <div id="message" class="message hidden"></div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Why Choose SubManager?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="/placeholder.svg?height=200&width=200&text=Track" alt="Track Feature" class="feature-image">
+                    <h3>Track Everything</h3>
+                    <p>Monitor all your subscriptions in one dashboard with detailed analytics and spending insights.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="/placeholder.svg?height=200&width=200&text=Remind" alt="Reminder Feature" class="feature-image">
+                    <h3>Never Miss a Payment</h3>
+                    <p>Get timely reminders before payments are due and avoid any subscription lapses.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="/placeholder.svg?height=200&width=200&text=Save" alt="Save Feature" class="feature-image">
+                    <h3>Save Money</h3>
+                    <p>Identify unused subscriptions and get recommendations on how to optimize your spending.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-preview">
+            <div class="app-screens">
+                <img src="/placeholder.svg?height=600&width=300&text=Screen+1" alt="App Screen 1" class="screen screen-1">
+                <img src="/placeholder.svg?height=600&width=300&text=Screen+2" alt="App Screen 2" class="screen screen-2">
+                <img src="/placeholder.svg?height=600&width=300&text=Screen+3" alt="App Screen 3" class="screen screen-3">
+            </div>
+            <div class="app-info">
+                <h2>Beautiful Interface</h2>
+                <p>Manage your subscriptions with our intuitive and easy-to-use interface. Track expenses, set reminders, and make informed decisions about your digital subscriptions.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Download the App</h3>
+                    <p>Get started by downloading SubManager from your preferred app store.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Connect Your Accounts</h3>
+                    <p>Easily link your subscriptions by connecting your accounts or scanning your emails.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Start Saving</h3>
+                    <p>Track your spending, get insights, and optimize your subscription costs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="cta">
+            <h2>Ready to Take Control?</h2>
+            <p>Join thousands of users who are saving money with SubManager</p>
+            <div class="download-buttons">
+                <a href="#" class="download-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,20.5v-17C3,2.67,3.67,2,4.5,2h9C14.33,2,15,2.67,15,3.5v17c0,0.83-0.67,1.5-1.5,1.5h-9C3.67,22,3,21.33,3,20.5z M6,18h6v-1H6V18z M13.5,4h-9C4.22,4,4,4.22,4,4.5v11C4,15.78,4.22,16,4.5,16h9c0.28,0,0.5-0.22,0.5-0.5v-11C14,4.22,13.78,4,13.5,4z"/>
+                    </svg>
+                    Download on Google Play
+                </a>
+                <a href="#" class="download-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71,19.5C17.88,20.74,17,21.95,15.66,21.97C14.32,22,13.89,21.18,12.37,21.18C10.84,21.18,10.37,21.95,9.1,22C7.79,22.05,6.8,20.68,5.96,19.47C4.25,17,2.94,12.45,4.7,9.39C5.57,7.87,7.13,6.91,8.82,6.88C10.1,6.86,11.32,7.75,12.11,7.75C12.89,7.75,14.37,6.68,15.92,6.84C16.57,6.87,18.39,7.1,19.56,8.82C19.47,8.88,17.39,10.1,17.41,12.63C17.44,15.65,20.06,16.66,20.09,16.67C20.06,16.74,19.67,18.11,18.71,19.5ZM13,3.5C13.73,2.67,14.94,2.04,15.94,2C16.07,3.17,15.6,4.35,14.9,5.19C14.21,6.04,13.07,6.7,11.95,6.61C11.8,5.46,12.36,4.26,13,3.5Z"/>
+                    </svg>
+                    Download on App Store
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">SubManager</div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 SubManager. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
